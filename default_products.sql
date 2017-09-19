@@ -1,5 +1,5 @@
 INSERT INTO products
-    (item_description,department,item_price,item_qty)
+    (product_name,department_name,price,stock_quantity)
 VALUES
     ('Fire TV Stick with Balexa Voice Remote | Streaming Media Player', 'Electronics', 39.99, 500000),
     ('Becho Dot (2nd Generation) - Black', 'Electronics', 49.99, 300000),
