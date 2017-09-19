@@ -16,7 +16,8 @@ connection.connect(function(err) {
 });
 
 function queryProducts() {
-  var query = 'SELECT item_id AS SKU, product_name AS "Product Description", price AS Price FROM products';
+  var query =
+    'SELECT item_id AS SKU, product_name AS "Product Description", price AS Price FROM products';
   connection.query(query, function(err, res) {
     console.table(res);
   });
@@ -60,10 +61,9 @@ function queryProducts() {
             [selectedItem[0].StockQuantity - quantity, itemId],
             function(err, inventory) {
               if (err) throw err;
-              // Runs the prompt again, so the user can keep shopping.
               queryProducts();
             }
-          ); // Ends the code to remove item from inventory.
+          );
         } else {
           console.log(
             'Insufficient inventory to fulfiull this order. Please order less of that item, as Bamazon only has ' +
