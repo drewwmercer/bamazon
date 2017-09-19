@@ -4,13 +4,13 @@ CREATE database bamazon;
 USE bamazon;
 
 CREATE TABLE products (
-  item_num INT AUTO_INCREMENT NOT NULL,
-  item_description VARCHAR(100) NOT NULL,
-  department VARCHAR(100) NOT NULL,
-  item_price DECIMAL(10,2) NOT NULL,
+  item_id INT AUTO_INCREMENT NOT NULL,
+  product_name VARCHAR(100) NOT NULL,
+  department_name VARCHAR(100) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
   item_sales DECIMAL(10,2) NOT NULL,
-  item_qty INT(10) NULL,
-  PRIMARY KEY (item_num)
+  stock_quantity INT(10) NULL,
+  PRIMARY KEY (item_id)
 );
 
 SELECT * FROM products;
