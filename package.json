@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/drewwmercer/bamazon#readme",
   "dependencies": {
-    "console.table": "^0.9.1"
+    "console.table": "^0.9.1",
+    "inquirer": "^3.3.0"
   }
 }
