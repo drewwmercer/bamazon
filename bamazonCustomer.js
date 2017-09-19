@@ -66,7 +66,7 @@ function queryProducts() {
           );
         } else {
           console.log(
-            'Insufficient inventory to fulfiull this order. Please order less of that item, as Bamazon only has ' +
+            'Insufficient inventory to fulfill this order. Please order less of that item, as Bamazon only has ' +
               selectedItem[0].StockQuantity +
               ' ' +
               selectedItem[0].ProductName +
