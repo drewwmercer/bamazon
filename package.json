@@ -18,6 +18,7 @@
   "homepage": "https://github.com/drewwmercer/bamazon#readme",
   "dependencies": {
     "console.table": "^0.9.1",
-    "inquirer": "^3.3.0"
+    "inquirer": "^3.3.0",
+    "mysql": "^2.14.1"
   }
 }
