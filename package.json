@@ -1,0 +1,22 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "bamazon command line app",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewwmercer/bamazon.git"
+  },
+  "author": "Drew Mercer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewwmercer/bamazon/issues"
+  },
+  "homepage": "https://github.com/drewwmercer/bamazon#readme",
+  "dependencies": {
+    "console.table": "^0.9.1"
+  }
+}
