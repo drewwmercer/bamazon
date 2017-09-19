@@ -9,3 +9,15 @@ var connection = mysql.createConnection({
   password: 'root',
   database: 'bamazon'
 });
+
+connection.connect(function(err) {
+  if (err) throw err;
+  queryProducts();
+});
+
+function queryProducts() {
+  var query = 'SELECT item_id, product_name, price FROM products';
+  connection.query(query, function(err, res) {
+    console.table(res);
+  });
+}
