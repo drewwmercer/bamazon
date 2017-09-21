@@ -85,8 +85,8 @@ function goShopping() {
               '\n\n°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°\n\nInsufficient inventory to fulfill this order. Please order less of that item, as Bamazon only has ' +
                 selectedItem[0].stock_quantity +
                 ' ' +
-                selectedItem[0].ProductName +
-                ' in stock at this moment.\n\n°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°\n\n'
+                selectedItem[0].product_name +
+                ' in stock at this time.\n\n°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°\n\n'
             );
             queryProducts();
           }
