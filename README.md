@@ -19,10 +19,10 @@ An amazon-like storefront made with MySQL. The app takes in orders from customer
 Records in **products** database before shopping transactions:   
 ![Screenshot](/screenshots/bamazonDemo1.png)
 <br />  
-Prompting shopper to enter *SKU* and *quantity*:
+Prompting shopper to enter *SKU* and available *quantity*:
 ![Screenshot](/screenshots/bamazonDemo2.png)
 <br />  
-
+Confirmaton of valid *quantity* based on active *inventory* and quoting total *price*:
 ![Screenshot](/screenshots/bamazonDemo3.png)
 <br />  
 ![Screenshot](/screenshots/bamazonDemo4.png)
