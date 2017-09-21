@@ -69,11 +69,11 @@ function goShopping() {
             );
             console.log(
               'You will be charged ' +
-                quantity * selectedItem[0].Price +
+                quantity * selectedItem[0].price +
                 ' dollars.  Thank you for shopping at Bamazon.'
             );
             connection.query(
-              'UPDATE products SET StockQuantity=? WHERE id=?',
+              'UPDATE products SET stock_quantity=? WHERE item_id=?',
               [selectedItem[0].stock_quantity - quantity, itemId],
               function(err, inventory) {
                 if (err) throw err;
@@ -83,10 +83,10 @@ function goShopping() {
           } else {
             console.log(
               'Insufficient inventory to fulfill this order. Please order less of that item, as Bamazon only has ' +
-                selectedItem[0].StockQuantity +
+                selectedItem[0].stock_quantity +
                 ' ' +
                 selectedItem[0].ProductName +
-                ' in stock at this moment.'
+                ' in stock at this moment.\n\n°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°\n\n'
             );
             queryProducts();
           }
