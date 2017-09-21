@@ -21,4 +21,12 @@ An amazon-like storefront made with MySQL. The app takes in orders from customer
 ![Screenshot](/screenshots/bamazonDemo1.png)
 <br />  
 ![Screenshot](/screenshots/bamazonDemo2.png)
-<br />
+<br />  
+![Screenshot](/screenshots/bamazonDemo3.png)
+<br />  
+![Screenshot](/screenshots/bamazonDemo4.png)
+<br />  
+![Screenshot](/screenshots/bamazonDemo5.png)
+<br />  
+![Screenshot](/screenshots/bamazonDemo6.png)
+<br />  
