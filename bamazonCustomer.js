@@ -59,22 +59,22 @@ function goShopping() {
         'SELECT * FROM products WHERE item_id=' + itemId,
         function(err, selectedItem) {
           if (err) throw err;
-          if (selectedItem[0].StockQuantity - quantity >= 0) {
+          if (selectedItem[0].stock_quantity - quantity >= 0) {
             // console.log("Bamazon's shelves have enough of that item ("selectedItem[0].ProductName + ")!");
             console.log(
               'Quantity in Stock: ' +
-                selectedItem[0].StockQuantity +
+                selectedItem[0].stock_quantity +
                 ' Order Quantity: ' +
                 quantity
             );
             console.log(
               'You will be charged ' +
-                order.quantity * selectedItem[0].Price +
+                quantity * selectedItem[0].Price +
                 ' dollars.  Thank you for shopping at Bamazon.'
             );
             connection.query(
               'UPDATE products SET StockQuantity=? WHERE id=?',
-              [selectedItem[0].StockQuantity - quantity, itemId],
+              [selectedItem[0].stock_quantity - quantity, itemId],
               function(err, inventory) {
                 if (err) throw err;
                 queryProducts();
