@@ -3,7 +3,6 @@ An amazon-like storefront made with MySQL. The app takes in orders from customer
 
 ## Demo
 
-1 inventory before transactions
 
 2 ask for item
 3 ask for qty
@@ -17,9 +16,10 @@ An amazon-like storefront made with MySQL. The app takes in orders from customer
 7 no impact on qty
 
 
-* Records in **products** database before shopping transactions:   
+Records in **products** database before shopping transactions:   
 ![Screenshot](/screenshots/bamazonDemo1.png)
 <br />  
+
 ![Screenshot](/screenshots/bamazonDemo2.png)
 <br />  
 ![Screenshot](/screenshots/bamazonDemo3.png)
