@@ -20,8 +20,10 @@ function queryProducts() {
     'SELECT item_id AS SKU, product_name AS "Product Description", price AS Price FROM products';
   connection.query(query, function(err, res) {
     console.table(res);
+    goShopping();
   });
-
+};
+function goShopping() {
   inquirer.prompt([
       {
         type: 'input',
@@ -40,8 +42,7 @@ function queryProducts() {
         message: 'How many units would you like to buy?',
         name: 'quantity'
       }
-    ])
-    .then(function(order) {
+    ]).then(function(order) {
       var quantity = order.quantity;
       var itemId = order.id;
       connection.query('SELECT * FROM products WHERE id=' + itemId, function(
@@ -68,15 +69,10 @@ function queryProducts() {
             function(err, inventory) {
               if (err) throw err;
               queryProducts();
-            }
-          );
+            });
         } else {
           console.log(
-            'Insufficient inventory to fulfill this order. Please order less of that item, as Bamazon only has ' +
-              selectedItem[0].StockQuantity +
-              ' ' +
-              selectedItem[0].ProductName +
-              ' in stock at this moment.'
+            'Insufficient inventory to fulfill this order. Please order less of that item, as Bamazon only has ' + selectedItem[0].StockQuantity + ' ' + selectedItem[0].ProductName + ' in stock at this moment.'
           );
           queryProducts();
         }
@@ -84,4 +80,4 @@ function queryProducts() {
     });
 }
 
-queryProducts();
+// queryProducts();
