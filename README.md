@@ -17,7 +17,7 @@ An amazon-like storefront made with MySQL. The app takes in orders from customer
 7 no impact on qty
 
 
-Records in **products** database before shopping transactions:   
+* Records in **products** database before shopping transactions:   
 ![Screenshot](/screenshots/bamazonDemo1.png)
 <br />  
 ![Screenshot](/screenshots/bamazonDemo2.png)
