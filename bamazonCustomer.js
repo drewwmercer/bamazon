@@ -62,7 +62,7 @@ function goShopping() {
           if (selectedItem[0].stock_quantity - quantity >= 0) {
             // console.log("Bamazon's shelves have enough of that item ("selectedItem[0].ProductName + ")!");
             console.log(
-              'Quantity in Stock: ' +
+              '\n\n°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°\n\nQuantity in Stock: ' +
                 selectedItem[0].stock_quantity +
                 ' Order Quantity: ' +
                 quantity
@@ -70,7 +70,7 @@ function goShopping() {
             console.log(
               'You will be charged ' +
                 quantity * selectedItem[0].price +
-                ' dollars.  Thank you for shopping at Bamazon.'
+                ' dollars.  Thank you for shopping at Bamazon.\n\n°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°\n\n'
             );
             connection.query(
               'UPDATE products SET stock_quantity=? WHERE item_id=?',
