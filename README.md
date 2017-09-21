@@ -25,6 +25,7 @@ Prompting shopper to enter *SKU* and available *quantity*:
 Confirmaton of valid *quantity* based on active *inventory* and quoting total *price*:
 ![Screenshot](/screenshots/bamazonDemo3.png)
 <br />  
+Records in **products** database after successful shopping transaction:
 ![Screenshot](/screenshots/bamazonDemo4.png)
 <br />  
 ![Screenshot](/screenshots/bamazonDemo5.png)
