@@ -31,5 +31,6 @@ Records in **products** database after successful shopping transaction:
 Response to shopper request for higher *quantity* than available *inventory*:
 ![Screenshot](/screenshots/bamazonDemo5.png)
 <br />  
+Records in **products** database unchanged after unsuccessful shopping transaction:
 ![Screenshot](/screenshots/bamazonDemo6.png)
 <br />  
