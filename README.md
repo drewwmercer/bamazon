@@ -1,5 +1,5 @@
 # bamazon
-An amazon-like storefront made with MySQL. The app takes in orders from customers and depletes stock from bamazon's inventory.
+An amazon-inspired inventory tracker made with MySQL. The app takes in orders from customers and depletes stock from bamazon's inventory.
 
 ## Demo - Customer experience
 Records in **products** database before shopping transactions:   
